@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  padding: 10px 10px;
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.cf:before, .cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
+header, main, footer {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+img {
+  max-width: 100%; }
+
+header {
+  display: flex;
+  flex-flow: column wrap; }
+
+nav {
+  width: 100%;
+  z-index: 999;
+  max-width: 1280px; }
+
+nav ul {
+  width: 75%;
+  background: black;
+  flex-direction: row;
+  display: flex; }
+
+aside {
+  max-width: 25%;
+  display: none; }
+
+aside > div {
+  flex: 1 0 auto;
+  background-position: center;
+  background-size: cover; }
+
+.posts {
+  width: 999px;
+  max-width: 100%;
+  flex-grow: 1; }
+
+body {
+  font-family: 'PT Sans Narrow', sans-serif; }
+
+h2 {
+  font-size: 2.2em; }
+
+h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase; }
+
+.bg {
+  background: url(/img/raster.png) center repeat, url(/img/bg.jpg) center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -9999; }
+
+article header {
+  position: relative; }
+article h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(120, 50, 150, 0.5);
+  padding: 10px; }
+article article p {
+  font-size: 1.5em; }
+
+.info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+
+@media only screen { }
+
+/* Define mobile styles */
+@media only screen and (max-width: 40em) { }
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  body {
+    padding: 10px 0; }
+  main > div {
+    display: flex;
+    flex-flow: row-reverse wrap; }
+  nav {
+    display: flex;
+    z-index: 10; }
+  .posts {
+    max-width: 75%;
+    padding: 0 0 0 20px; }
+  article.big-post {
+    max-width: 100%; }
+  .logo {
+    max-width: 320px;
+    display: flex; }
+  aside {
+    display: flex;
+    flex-direction: column;
+    flex: 2; } }
+
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { }
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 64.063em) { }
+
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { }
+
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 90.063em) { }
+
+/* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 120.063em) { }
+
+/* min-width 1921px, xlarge screens */
