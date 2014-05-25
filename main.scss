@@ -81,12 +81,24 @@ nav {
   width: 100%;
   z-index: 999;
   max-width: 1280px;
-}
-nav ul {
-  width: 75%;
-  background: black;
-  flex-direction: row;
-  display: flex;
+ 
+  .menu {
+    width: 75%;
+    background: black;
+    flex-direction: row;
+    display: flex;
+    height: 3em;
+    line-height: 3;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+  }
 }
 
 aside {
@@ -180,6 +192,64 @@ article {
     z-index: 10;
   }
 
+  div.cube {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition:
+    -webkit-transform 300ms;
+    -moz-transition: -moz-transform 300ms;
+    -o-transition: -o-transform 300ms;
+    transition: transform 300ms;
+    -webkit-backface-visibility: hidden; 
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 320px;
+    height: 105px;
+    /* position: absolute; */
+    -webkit-transform: translateZ(0) rotateX( 90deg ); 
+    -moz-transform: translateZ( 0 ) rotateX( 90deg );
+    -o-transform: translateZ( 0 ) rotateX( 90deg );
+    transform: translateZ( 0 ) rotateX( 90deg );
+  }
+
+  .face {
+      background: #000;
+      padding: 20px;
+      height: 105px;
+  }
+
+
+  div.logo.face {
+    -webkit-transform: translateZ( 52px );
+    -moz-transform: translateZ( 52px );
+    -o-transform: translateZ( 52px );
+    transform: translateZ( 52px );
+  }
+
+  div.networks.face {
+    -webkit-transform: rotateX( -90deg ) translateZ( -53px );
+    -moz-transform: rotateX( -90deg ) translateZ( 52px );
+    -o-transform: rotateX( -90deg ) translateZ( 52px );
+    transform: rotateX( -90deg ) translateZ( 52px );
+  }
+
+  .is-sticky .cube {
+    -webkit-transform: translateZ(0) rotateX( 0deg ); 
+    -moz-transform: translateZ( 0 ) rotateX( 0deg );
+    -o-transform: translateZ( 0 ) rotateX( 0deg );
+    transform: translateZ( 0 ) rotateX( 0deg ); 
+  }
+  nav#nav:hover .cube {
+    -webkit-transform: translateZ(0) rotateX( 90deg ); 
+    -moz-transform: translateZ( 0 ) rotateX( 90deg );
+    -o-transform: translateZ( 0 ) rotateX( 90deg );
+    transform: translateZ( 0 ) rotateX( 90deg );
+  }
+
   .posts {
     max-width: 75%;
     padding: 0 0 0 20px;  
@@ -187,11 +257,6 @@ article {
 
   article.big-post {
     max-width: 100%;
-  }
-
-  .logo {
-    max-width: 320px;
-    display: flex;
   }
 
   aside {
