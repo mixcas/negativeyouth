@@ -207,13 +207,14 @@ article {
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     height: 105px;
     /* position: absolute; */
-    -webkit-transform: translateZ(0) rotateX( 90deg ); 
-    -moz-transform: translateZ( 0 ) rotateX( 90deg );
-    -o-transform: translateZ( 0 ) rotateX( 90deg );
-    transform: translateZ( 0 ) rotateX( 90deg );
+    -webkit-transform: translateZ(0) rotateX( 0deg ); 
+    -moz-transform: translateZ( 0 ) rotateX( 0deg );
+    -o-transform: translateZ( 0 ) rotateX( 0deg );
+    transform: translateZ( 0 ) rotateX( 0deg );
   }
 
   .face {
@@ -223,31 +224,31 @@ article {
   }
 
 
-  div.logo.face {
+  div.networks.face {
     -webkit-transform: translateZ( 52px );
     -moz-transform: translateZ( 52px );
     -o-transform: translateZ( 52px );
     transform: translateZ( 52px );
   }
 
-  div.networks.face {
-    -webkit-transform: rotateX( -90deg ) translateZ( -53px );
-    -moz-transform: rotateX( -90deg ) translateZ( 52px );
-    -o-transform: rotateX( -90deg ) translateZ( 52px );
-    transform: rotateX( -90deg ) translateZ( 52px );
+  div.logo.face {
+    -webkit-transform:  translateZ( -52px );
+    -moz-transform: rotateX( -90deg ) translateZ( -52px );
+    -o-transform: rotateX( -90deg ) translateZ( -52px );
+    transform: rotateX( -90deg ) translateZ( -52px );
   }
 
   .is-sticky .cube {
-    -webkit-transform: translateZ(0) rotateX( 0deg ); 
-    -moz-transform: translateZ( 0 ) rotateX( 0deg );
-    -o-transform: translateZ( 0 ) rotateX( 0deg );
-    transform: translateZ( 0 ) rotateX( 0deg ); 
-  }
-  nav#nav:hover .cube {
     -webkit-transform: translateZ(0) rotateX( 90deg ); 
     -moz-transform: translateZ( 0 ) rotateX( 90deg );
     -o-transform: translateZ( 0 ) rotateX( 90deg );
-    transform: translateZ( 0 ) rotateX( 90deg );
+    transform: translateZ( 0 ) rotateX( 90deg ); 
+  }
+  nav#nav:hover .cube {
+    -webkit-transform: translateZ(0) rotateX( 0deg ); 
+    -moz-transform: translateZ( 0 ) rotateX( 0deg );
+    -o-transform: translateZ( 0 ) rotateX( 0deg );
+    transform: translateZ( 0 ) rotateX( 0deg );
   }
 
   .posts {
